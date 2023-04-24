@@ -1,0 +1,30 @@
+﻿@model Phone
+@{
+    ViewBag.Title = "Добавить устройство";
+}
+<h2>Заполните форму для добавления устройства</h2>
+<div class="row">
+    <div class="phone_add_form">
+        <form asp-action="Add" method="post">
+            <div class="form_row mb-3">
+                <label for="">
+                    Наименование
+                    <input asp-for="Name" type="text">
+                </label>
+            </div>
+            <div class="form_row mb-3">
+                <label for="">
+                    Компания
+                    <input asp-for="Company" type="text">
+                </label>
+            </div>
+            <div class="form_row mb-3">
+                <label for="">
+                    Стоимость
+                    <input asp-for="Price" type="text">
+                </label>
+            </div>
+            <button type="submit">Создать</button>
+        </form>
+    </div>
+</div>
